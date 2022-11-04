@@ -1,0 +1,95 @@
+.App {
+  color: #fff;
+}
+
+h1 {
+  font-size: 2em;
+  color: #fff;
+}
+
+.photo {
+  z-index: 300;
+  position: absolute;
+  max-height: 100%;
+}
+
+.photo-1 {
+  /* move to the right */
+  transform: translate(1000px, 0);
+}
+
+.photo-2 {
+  /* move to the right */
+  transform: translate(500px, 0);
+}
+
+.description {
+  font-family: Lobster;
+  font-size: 80px;
+
+  text-shadow: 0 0 10px #ff0000, 0 0 10px #0000ff;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 400;
+  position: absolute;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.postcard {
+  z-index: 200;
+  position: absolute;
+  max-height: 100%;
+  font-size: 20px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-wrapper {
+  height: 505px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgb(230, 230, 230);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.glow {
+  box-shadow: 0 0 10px #fff;
+}
+
+.btn:hover {
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+}
+
+/* add transition beetween the frames */
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  animation: rotating 4s linear infinite;
+}
